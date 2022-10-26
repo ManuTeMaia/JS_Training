@@ -1,5 +1,5 @@
 function isAnagram(a, b) {
-    if (a.length !== b.length) return false
+    if (a.length !== b.length || (a.length === 0 && b.length === 0)) return false
 
     const map = new Map()
 
@@ -30,4 +30,4 @@ function isAnagram(a, b) {
 
 console.log(isAnagram('xyz', 'b')) //false
 console.log(isAnagram('xyza', 'ayzx')) //true
-console.log(isAnagram('', '')) //true
+console.log(isAnagram('', '')) //false
