@@ -37,11 +37,12 @@ function uniqueString(arr) {
             res += reverse(arr[i].value)
         }
     }
-    res = new Set(res)
-    const unique = Array.from(res).join('')
+    res = [...new Set(res)].join('')
+    //unique = new Set(res)
+    //const unique = Array.from(res).join('')
 
-    console.log(unique)
-    return unique
+    console.log(res)
+    return res
 }
 
 uniqueString(input)
