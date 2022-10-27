@@ -1,4 +1,4 @@
-setTimeout(() => console.log(a, b, c),0);
+setTimeout(() => console.log(a, b, c),0); // 3
 
 const promise = new Promise((resolve) => {
     a++;
@@ -9,11 +9,11 @@ const a = 1;
 
 promise
     .then(() =>console.log(a))
-    .catch(()=>console.log(b--))
+    .catch(()=>console.log(b--)) // 2
     .catch(()=>console.log(0));
 
 let b = 2
 
-console.log(c);
+console.log(c); // 1
 
 var c = 3
