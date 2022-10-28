@@ -22,7 +22,7 @@ function findMax(arr) {
     return arr[res]
 }
 
-findMax([1,2,3,6,10,9]) //10
-findMax([1,2,3,6,4,9]) //9
-findMax([10,2,3,6,4,9]) //10
-findMax(['aaa','ddddd','fdcf']) //10
+// findMax([1,2,3,6,10,9]) //10
+// findMax([1,2,3,6,4,9]) //9
+// findMax([10,2,3,6,4,9]) //10
+// findMax(['aaa','ddddd','fdcf']) //10
