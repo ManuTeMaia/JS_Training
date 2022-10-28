@@ -2,6 +2,7 @@
 
 function maxCharsInString(str) {
     if (str.length === 0) return false
+    str = str.toLowerCase()
     let char = ''
     let co = co2 = 0
     let max = 0
@@ -20,7 +21,7 @@ function maxCharsInString(str) {
     //     }
     // }
 
-    // Средний вариант за O(Nk)
+    // Средний вариант за O(N * k)
     // let set = [...new Set(str)]
     //
     // for(let i = 0; i < set.length; i++) {
@@ -38,7 +39,7 @@ function maxCharsInString(str) {
     //
     // }
 
-    // Лучший вариант за O(1)
+    // Лучший вариант за O(N)
     const map = new Map()
     for(char of str) {
         co++
@@ -60,5 +61,5 @@ function maxCharsInString(str) {
 }
 
 maxCharsInString('') // false
-maxCharsInString('strtrtrtt') // 't'
+maxCharsInString('strtrtrtTTTTTT') // 't'
 maxCharsInString('abbaaaacccddhkkjbkjh') // 'a'
