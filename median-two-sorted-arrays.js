@@ -36,7 +36,6 @@ function findMedianSortedArrays(nums1, nums2) {
     const arr = nums1.concat(nums2)
     const arrSorted = quickSort(arr)
     const midIndex = Math.floor(arrSorted.length / 2)
-    console.log(arrSorted.length  / 2)
     if(arrSorted.length  %  2 !== 0) {
         median = arrSorted[midIndex]
     } else {
