@@ -26,11 +26,7 @@ function reverse(str) {
 
 function uniqueString(arr) {
     let res = ''
-    arr.sort((a, b) => {
-        if(a.order < b.order) {return -1}
-        else if(a.order > b.order) {return 1}
-        else return 0
-    })
+    arr.sort((a, b) => a.order - b.order)
 
     for(let i = 0; i < arr.length; i++) {
         if(arr[i].expired === false) {
