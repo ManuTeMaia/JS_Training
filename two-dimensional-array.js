@@ -28,6 +28,7 @@ class HashObj {
     }
 
     add(el) {
+        if(HashObj._find(el, this.set, this.length)) return
         const list = this.set[el  %  this.length]
         list.push(el)
     }
@@ -42,6 +43,16 @@ class HashObj {
         }
 
         return HashObj._console(res)
+    }
+
+    static _find(el, set, length) {
+        const list = set[el  %  length]
+        for(let i = 0; i < list.length; i++) {
+            if(list[i] === el) {
+                return true
+            }
+        }
+        return false
     }
 
     delete(el) {
@@ -67,6 +78,7 @@ class HashObj {
 
 const hash = new HashObj(10)
 hash.add(35)
+hash.add(14)
 hash.add(14)
 hash.add(164)
 hash.print()
