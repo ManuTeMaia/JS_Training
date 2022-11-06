@@ -15,7 +15,7 @@ function quickSort(arr) {
     if(arr.length <= 1) return arr
     let pivotIndex = Math.floor(arr.length / 2)
     let pivot = arr[pivotIndex]
-    let  less = []
+    let less = []
     let greater = []
     for(let i =  0; i < arr.length; i++) {
         if(i === pivotIndex) {

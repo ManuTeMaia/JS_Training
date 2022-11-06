@@ -19,5 +19,5 @@ function findTwoMax(arr) {
     return {max1, max2}
 }
 
-findTwoMax([1,2,3,6,10,9]) // [10,9]
+findTwoMax([1,12,3,6,15,9]) // [15,12]
 findTwoMax([1,2]) // [2,1]

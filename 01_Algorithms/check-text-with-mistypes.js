@@ -3,7 +3,6 @@
 // Для каждого слова сказать, входит ли оно в словарь (возможно с пропущенной буквой)
 
 // Не очень красивое решение
-
 // function checkTextWithMistypes(set, text) {
 //     const wordSet =  new Set(set)
 //     let map = new Map()
