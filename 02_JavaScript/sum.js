@@ -9,9 +9,7 @@ function sum(arr) {
     const sumArr = plain(arr)
 
     for (let i = 0; i < sumArr.length; i++) {
-        if(typeof(sumArr[i]) === "number") {
-            sum += sumArr[i]
-        } else if (!isNaN(parseInt(sumArr[i]))) {
+        if(!isNaN(parseInt(sumArr[i]))) {
             sum += parseInt(sumArr[i],10)
         }
     }
